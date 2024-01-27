@@ -1,9 +1,9 @@
 # brute force
 
-p, q, r = [1, 2, -3]
+p, q, r = [1, 2, 3]
 
 
-arr = [4, 70, -3, 54, -7, 49, 12, 45]
+arr = [1,2,3,4,5]
 n = len(arr)
 # expression = -2*a + 5*b + -3*c
 
@@ -32,7 +32,7 @@ print(answer)
 
 # for i <= j <= k
 answer = -2**31
-for i in range(0, n-1):
+for i in range(0, n):
     answer = max(answer, prefix_max[i] + q*arr[i] + suffix_max[i])
 
 print(answer)
